@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv"X-UA-Compatible" content "ie=edge">
+        <title>Document</title> 
+    </head>
+    <body>
+        <h1>Calculadora média dos alunos</h1>
+        <script>
+            var nome = prompt('Digite o nome do aluno: ');
+            var nota1 = Number(prompt('Digite a primeira nota do aluno:'));
+            var nota2 = Number(prompt("Digite a segunda nota: "));
+
+            var soma = (nota1 + nota2)/2;
+            if (soma >= 7) {
+                document.write('PARABÉNS! Você foi aprovado! ');
+            } else {
+                document.write('Você está reprovado!');
+            }
+            
+            document.write ('<br /> A média do ' + nome + ' é de ' + soma); // essa br é uma forma de quebrar a linha  
+            
+        </script>
+
+    </body>
+</html>
